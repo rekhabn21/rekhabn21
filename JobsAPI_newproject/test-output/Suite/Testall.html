@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Testall</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Testall</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/4</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 09 13:07:01 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2211 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RestApiTests.JobsAPi_getprograms.get_programs()'><b>get_programs</b><br>Test class: RestApiTests.JobsAPi_getprograms<br/>
+<a href="#Output-139706933" onClick='toggleBox("Output-139706933", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-139706933" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-139706933">
+{"data": {"Job Title": {"0": "SDET", "1": "Senior SDET", "2": "SDET", "3": "SDET", "4": "Jr SDET local to CA", "5": "100% Remote Direct Hire Senior SDET Tester- Java Programmer", "6": "SDET Engineer", "7": "SDET - 100% Remote Job", "8": "Senior Software Developer in Test (SDET)", "9": "Software Developer in Test (SDET)", "10": "SDET Engineer with Appium", "11": "Sr. SDET", "12": "AWS SDET with Java - Contract - Remote", "13": "SDET Engineer w/t Java Coding experience.", "14": "Quality Assurance Analyst (SDET, Automated, Java, Python)", "15": "Java SDET Engineer", "16": "Senior C#.net SDET Engineer, Selenium, Framework Creation, Agile, Leadership (Fulltime/Direct Hire is also an option)", "17": "SDET", "18": "\"SDET1\"", "19": "\"SDET1\"", "20": "\"SDET5\"", "21": "\"SDET15\"", "22": "\"SDET15\"", "23": "\"SDET15\"", "24": "\"SDETJr\"", "25": "\"SDET11\"", "26": "\"SDET1\"", "27": "\"SDET10\"", "28": "SDET", "29": "Temp Job", "30": "SDET", "31": "SDET", "32": "SDET", "33": "SDET", "34": "SDET", "35": "Developer", "36": "SDET", "37": "SDET", "38": "SDET", "39": "SDET", "40": "SDET", "41": "SDET46", "42": "SDET45", "43": "Automation Tester", "44": "Automation Tester", "45": "Automation Tester", "46": "Automation Tester", "47": "Automation Tester", "48": "Automation Tester", "49": "Automation Tester", "50": "Automation Tester", "51": "SDET"}, "Job Company Name": {"0": "Signature Consultants", "1": "google", "2": "Talent Software Services, Inc", "3": "Swanktek", "4": "Astir IT Solutions", "5": "Elevate Digital", "6": "Vinsys Information Technology, Inc", "7": "Orpine.com", "8": "Infostretch Corporation", "9": "Bourntec Solutions, Inc.", "10": "InfiCare Technologies", "11": "Luxoft USA Inc", "12": "Lorven Technologies, Inc.", "13": "Torque Technologies LLC", "14": "Computer Enterprises, Inc.", "15": "Novateur Technologies Inc.", "16": "Xoriant Corporation", "17": "Kforce Technology Staffing", "18": "\"shit2\"", "19": "\"NumpyNinJA\"", "20": "\"Numpy\"", "21": "\"Numpyaaa\"", "22": "\"Numpyaaa\"", "23": "\"Numpyaaa\"", "24": "\"ABCDEFGH\"", "25": "\"Creative Power\"", "26": "\"Creative  the Power\"", "27": "\"Company\"", "28": "Computer Enterprises, Inc.", "29": "Maya Tech", "30": "Computer Enterprises, Inc.", "31": "Computer Enterprises, Inc.", "32": "Computer Enterprises, Inc.", "33": "Delta", "34": "NumphyNinja", "35": "Sap", "36": "Delta", "37": "Delta", "38": "Delta", "39": "Delta", "40": "Delta", "41": "Vi46", "42": "Vi45", "43": "Carezant", "44": "Carezant", "45": "Carezant", "46": "Carezant", "47": "Carezant", "48": "Carezant", "49": "Carezant", "50": "Carezant", "51": "Delta"}, "Job Location": {"0": "Vinings, GA, USA", "1": "Fairview", "2": "Seattle, WA, USA", "3": "Atlanta, GA, USA", "4": "Remote or San Francisco, CA, USA", "5": "Remote", "6": "Monte Sereno, CA, USA", "7": "Remote", "8": "Santa Clara, CA, USA", "9": "Remote", "10": "San Francisco, CA, USA", "11": "Irvine, CA, USA", "12": "Remote", "13": "Atlanta, GA, USA", "14": "Sunnyvale, CA, USA", "15": "Weehawken, NJ, USA", "16": "Remote", "17": "Greenwood Village, CO, USA", "18": "\"Corona,CA\"", "19": "\"Tustin,CA\"", "20": "\"TEM,CA\"", "21": "\"TEMPA,CA\"", "22": "\"TEMPA,CA\"", "23": "\"TEMPA,CA\"", "24": "\"Wexford,Pa\"", "25": "\"SouthFayette,Pa\"", "26": "\"SouthFayette1,Pa\"", "27": "\"SouthFayette2,Pa\"", "28": "NAGHALAND", "29": "Malaysia", "30": "NAGHALAND", "31": "NAGHALAND", "32": "NAGHALAND", "33": "Phoenix, Az", "34": "Georgia", "35": "NJ", "36": "Phoenix, Az", "37": "Phoenix, Az", "38": "Phoenix, Az", "39": "Phoenix, Az", "40": "Phoenix, Az", "41": "Wichita,KS", "42": "Andover,KS", "43": "Chennai", "44": "London", "45": "Germany", "46": "Spain", "47": "UK", "48": "Russia", "49": "Canada", "50": "Norway", "51": "Phoenix, Az"}, "Job Type": {"0": "Contract", "1": "Contract", "2": "Contract", "3": "Full-time", "4": "Contract", "5": "Full-time", "6": "Full-time, Third Party, Contract", "7": "Contract, Third Party", "8": "Contract, Third Party", "9": "Contract", "10": "Full-time, Third Party", "11": "Full-time", "12": "Third Party, Contract", "13": "Contract", "14": "Contract", "15": "Contract, Third Party", "16": "Contract", "17": "Contract", "18": "\"Contract\"", "19": "\"Contract\"", "20": "\"Contract\"", "21": "\"Contract\"", "22": "\"Contract\"", "23": "\"Contract\"", "24": "\"Contract\"", "25": "\"Contract\"", "26": "\"Contract\"", "27": "\"Contract\"", "28": "COntract", "29": "FullTIme", "30": "COntract", "31": "COntract", "32": "COntract", "33": "Full Time", "34": "remote", "35": "inperson", "36": "Full Time", "37": "Full Time", "38": "Full Time", "39": "Full Time", "40": "Full Time", "41": "Permanent", "42": "Full Time", "43": "FullTime", "44": "FullTime", "45": "FullTime", "46": "FullTime", "47": "FullTime", "48": "FullTime", "49": "FullTime", "50": "FullTime", "51": "Full Time"}, "Job Posted time": {"0": "44 minutes ago", "1": "2 hours ago", "2": "2 minutes ago", "3": "6 hours ago", "4": "7 hours ago", "5": "10 hours ago", "6": "46 minutes ago", "7": "6 hours ago", "8": "5 hours ago", "9": "3 hours ago", "10": "25 minutes ago", "11": "2 hours ago", "12": "5 minutes ago", "13": "3 hours ago", "14": "5 hours ago", "15": "5 hours ago", "16": "2 hours ago", "17": "1 hour ago", "18": NaN, "19": NaN, "20": NaN, "21": NaN, "22": NaN, "23": "\"25minutes\"", "24": NaN, "25": NaN, "26": NaN, "27": NaN, "28": "30 min", "29": "15 minutes before", "30": "30 min", "31": "30 min", "32": "30 min", "33": "15 minutes ago", "34": "4 hours ago", "35": "2 hours ago", "36": "15 minutes ago", "37": "15 minutes ago", "38": "15 minutes ago", "39": "15 minutes ago", "40": "15 minutes ago", "41": "1 hour ago", "42": "2 days ago", "43": "1 day", "44": "2 day", "45": "3 day", "46": "4 day", "47": "5 day", "48": "6 day", "49": "7 day", "50": "8 day", "51": "15 minutes ago"}, "Job Description": {"0": "Job Summary: Signature Consultants is seeking a Software Developer in Test (SDET) for an opportunity with a client located in Vinings, GA. Qualifications: Resources required for Quality assurance engineering Ability to automate any processes and functions Experience in standing up the automation from scratch Experience in writing file validation frameworks Expertise in the API and Database automation Expertise in writing Web automation framework Experience in the process automation Expertise", "1": "SQA Group is a technology and advisory services firm in growth mode, partnering with Fortune 500 companies, large enterprises and mid-market organizations to help our clients drive transformation. We introduce a blend of emerging technology solutions, data science services, and consulting services to fuel our clients\u2019 modernization initiatives. We are partnering with an insurance company that is undergoing a digital transformation initiative. As part of this larger transformation, SQA Group will", "2": "SDETJob Summary: Talent Software Services is in search of a SDET for a contract position in Seattle, WA. Opportunity will be one year with a strong chance for a long-term extension.Position Summary: Service level automation.Primary Responsibilities/Accountabilities: Modify existing databases and database management systems. Write and code logical and physical database descriptions and specify identifiers of database to management system or direct others in coding descriptions.Qualification: Kno", "3": "Hi, Greetings for the day!! Hope you are doing well!! Kindly check the below Job requirement and share with us your updated resume and the best time to reach you to discuss more on this position. If interested in this position, kindly mention the expected salary Role: SDET Lead Location of Requirement: Atlanta, GA Duration: Full Time Mandatory Technical / Functional Skills: 8-10+ years\u2019 experience working with web-based & cloud based software products/applications, APIs, Webservices and bac", "4": "Must have Trading experience and consultant must be local to CA. Analyzing the requirements from client. Arranging Test Environment to execute the test cases. Conducting Review Meetings. Analyzing and executing Test Cases. Defect Tracking. Communicating with Test Manager. Thank you, Prasad #x 715", "5": "We have a 100% remote, direct hire, opportunity for a Senior SDET tester. The client is looking for someone that has very strong java programming skills. They want this person's strongest skills to be with java development and being able to use those programming skills to help them with their automation. Ideally this individual has previously been a developer and transitioned into utilizing their programming skills for QA. The client offers a great compensation package with 5 weeks PTO, 401k mat", "6": "Hope you are doing well . We have urgent open position for SDET Engineer in Ft. Mill or Austin TX or Sandiego CA. pl. go thorugh with the below details and let me know your interest . If you are interested kindly share a copy of resume along with the rate / salary expectations and best time to reach you . Job Title : SDET Engineer Location : Ft. Mill or Austin TX or Sandiego CA Skills Needed : Need strong Testng, Selenium, Java Coding experience Must have: SDET Technical Skillset (Core Java,", "7": "Role: SDET Location: Remote job / Work for home Duration: 6 Months + Contract. Immediate interview / Urgent need Job Description:- The SDET is the person responsible for developing, implementing, and sustaining complex test automation using Agile automation techniques and tools. You will receive deep insight into the software development lifecycle along with freedom to complete your goals in your way. If you thrive in a fast-paced environment, operating at the tactical level, while solving dif", "8": "As a Senior Software Developer in Test, you will have the opportunity to work with experts in these fields to drive toward the common goal of bringing our sequencing platform to market. You will be responsible for test design, development, automation, deployment, execution, and reporting. In this role, you will represent quality engineering and verification on behalf of your feature team in Agile events and activities. Responsibilities Authoring and confirming correctness of user story-driven te", "9": "Greetings , This is Srini from Bourntec Inc, reaching out to see if you might be available and looking for any new opportunities, if yes please go through the below role and reply back with an updated resume and requested details below. Position: - Software Developer in Test (SDET) Location: Remote Duration: 5 Months Job description: A. PURPOSE AND GOALS \u2022 This resource will provide expert-level expertise in the area of design and code development for automated testing and executing t", "10": "Hi This is mayank from InficareTech ,If you are interested . Let me know best time to connect. With updated resume. Position- SDET Engineer with Appium Location-SFO,CA Contract Cucumber & Java (Strong java coding experience) Mobile testing Appium with any cloud services (Perfecto, Saucelabs,Browser Stack) Proficiency in writing Native app code test using Swift XCTest, Espresso with Kotlin with any Cloud services like (Sauce labs, Perfecto, Browser Stack, Seetest Cloud etc) Exposure to Applito", "11": "Project Description:Our Customer is one of the world's largest investment management companies. Based in Southern California, our client manages close to $2 trillion in assets. The Project: Luxoft is responsible for solution test automation for Investment Management , Equity Order Management platforms and other engagements of the Client. You will be developing scripts to support test automation via SIA framework as a part of the Luxoft's SDET team. This engagement covers test automation for", "12": "Job Title: AWS SDET with Java Job Location: Remote Job Type: Contract 12+ Months Strong Java programming skills, Junit, Cucumber BDD. Database experience: SQL/Oracle, Postgres Experience in tools like Postman, TIBCO EMS Experience in CI/CD using tools like Jenkins, UCD, GIT, JIRA Demonstrated experience with testing the applications on cloud (AWS) Working in distributed SOA environments including REST services. Demonstrated expertise in the full software development life cycle( SDLC), includi", "13": "Hi, Please find below the JD. Title: SDET Engineer Location: Atlanta, GA Duration: Long Term Overall Experience level: 8+ Yrs Job Description: Work discipline to support remote teams is a must - availability on Slack, Outlook, Phone, Zoom, responsiveness, flexibility, respecting core hours, advance time-off notifications, timely communication of ad-hoc time-offs like sick leaves, timely timesheet and time-off entries, uninterrupted internet connectionCommunication: clear communication o", "14": "Title: Quality Assurance Analyst (SDET, Automated, Java, Python) Location/Remote/Workspace: Sunnyvale California. (fully remote option available) (They are expecting to return at the end of August and this role would sit onsite in Sunnyvale) Duration: Contract Responsibility Establish milestones and monitor adherence to plans and schedules, identify delivery risks, and obtain/drive mitigation strategies and solutionsTest cases, Use cases, Python scripting for JAVA middleware development, REST,", "15": "Hi ,Job Title: Java SDET EngineerDuration:6+MonthsLocation: Weehawken, NJ3 Rounds of interviewNote: Need a person who can ready and write java code and do automation testing. Build automation framework from scratch.Primary Duties and Responsibilities: Design, develop and debug tests and Test Automation Framework in a complex environment using tools like RESTAPI, TestNG, Jenkins, Java and Gatling/LoadRunner.Execute tests, report results and open bugs as needed per organizational standards.Good ex", "16": "Must Haves: Senior C#.net SDET Engineer, Selenium, Framework Creation, Agile, Leadership <>Qualifications:Bachelor\u2019s degree in Computer Science or related field or equivalent combination of industry related professional experience and education3-5 years of working experienceWorking experience in software development and/or testingExperience coding in C#Experience working in Micro services architecture and testing restful API\u2019sWorking experience with software test tools and processes, building an", "17": "RESPONSIBILITIES: Kforce has a client in Greenwood Village", "18": "\"really\"", "19": "\"come and explore\"", "20": "\"come join us \"", "21": "\"comefind us  \"", "22": "\"comefind us  \"", "23": "\"comefind us  \"", "24": "\"ajdhiyfof ofrfo87ryfhfuhfoiurey\"", "25": "\"dhdshgkdashnbask ofrfo87ryfhfuhfoiurey\"", "26": "\"ofrfo87ryfhfuhfoiurey\"", "27": "\"rey\"", "28": "This Is Important to every one", "29": "Selenium withJava", "30": "This Is Important to every one", "31": "This Is Important to every one", "32": "This Is Important to every one", "33": "Selenium, Rest Assured,Java", "34": "Automation", "35": "SDET", "36": "Selenium, Rest Assured,Java", "37": "Selenium, Rest Assured,Java", "38": "Selenium, Rest Assured,Java", "39": "Selenium, Rest Assured,Java", "40": "Selenium, Rest Assured,Java", "41": "Automation testing ", "42": "API Testing", "43": "Good Automation Knowledge", "44": "Good Automation Knowledge", "45": "Good Automation Knowledge", "46": "Good Automation Knowledge", "47": "Good Automation Knowledge", "48": "Good Automation Knowledge", "49": "Good Automation Knowledge", "50": "Good Automation Knowledge", "51": "Selenium, Rest Assured,Java"}, "Job Id": {"0": "1001", "1": "1003", "2": "1004", "3": "1005", "4": "1006", "5": "1007", "6": "1008", "7": "1009", "8": "1010", "9": "1011", "10": "1012", "11": "1013", "12": "1014", "13": "1015", "14": "1016", "15": "1017", "16": "1018", "17": "1018", "18": "\"1020\"", "19": "\"1025\"", "20": "\"1026\"", "21": "\"1027\"", "22": "\"1028\"", "23": "\"1029\"", "24": "\"1031\"", "25": "\"1032\"", "26": "\"1033\"", "27": "\"1034\"", "28": "4565", "29": "567", "30": "4568", "31": "4569", "32": "45600", "33": "1299", "34": "2222", "35": "3344", "36": "1499", "37": "1399", "38": "1699", "39": "1999", "40": "1799", "41": "46", "42": "45", "43": "5000", "44": "5001", "45": "5002", "46": "5003", "47": "siosl", "48": "sfaio90", "49": "0", "50": NaN, "51": "2199"}}}
+<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>RestApiTests.JobsAPi_getprograms@1a75e76a</td></tr>
+<tr>
+<td title='RestApiTests.jsonschema_Jobsapi.get_programs()'><b>get_programs</b><br>Test class: RestApiTests.jsonschema_Jobsapi</td>
+<td></td>
+<td>2</td>
+<td>RestApiTests.jsonschema_Jobsapi@5032714f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RestApiTests.JobsAPi_Postprograms.Post_program()'><b>Post_program</b><br>Test class: RestApiTests.JobsAPi_Postprograms</td>
+<td><div><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace383801987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace383801987'><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>RestApiTests.JobsAPi_Postprograms@273444fe</td></tr>
+<tr>
+<td title='RestApiTests.JobsApi_Putprogram.Put_programs()'><b>Put_programs</b><br>Test class: RestApiTests.JobsApi_Putprogram</td>
+<td><div><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483144661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483144661'><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>RestApiTests.JobsApi_Putprogram@33bc72d1</td></tr>
+<tr>
+<td title='RestApiTests.JobsApi_Deleteprograms.delete_programs()'><b>delete_programs</b><br>Test class: RestApiTests.JobsApi_Deleteprograms</td>
+<td><div><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454008547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454008547'><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>RestApiTests.JobsApi_Deleteprograms@645aa696</td></tr>
+<tr>
+<td title='RestApiTests.JobsApi_getcreateddata.getcreatedprogram()'><b>getcreatedprogram</b><br>Test class: RestApiTests.JobsApi_getcreateddata</td>
+<td><div><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774592605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774592605'><pre>java.lang.NullPointerException: Cannot read the array length because &quot;oResult&quot; is null
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>RestApiTests.JobsApi_getcreateddata@5524cca1</td></tr>
+</table><p>
+</body>
+</html>

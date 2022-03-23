@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="classes" name="Suite">
+  <test thread-count="6" parallel="classes" name="Testall">
+    <classes>
+      <class name="RestApiTests.JobsApi_Deleteprograms"/>
+      <class name="RestApiTests.JobsAPi_Postprograms"/>
+      <class name="RestApiTests.JobsApi_Putprogram"/>
+      <class name="RestApiTests.JobsAPi_getprograms"/>
+      <class name="RestApiTests.JobsApi_getcreateddata"/>
+      <class name="RestApiTests.jsonschema_Jobsapi"/>
+    </classes>
+  </test> <!-- Testall -->
+</suite> <!-- Suite -->

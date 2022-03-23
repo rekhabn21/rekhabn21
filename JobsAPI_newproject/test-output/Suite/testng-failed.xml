@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="classes" name="Testall(failed)">
+    <classes>
+      <class name="RestApiTests.JobsApi_Deleteprograms">
+        <methods>
+          <include name="delete_programs"/>
+        </methods>
+      </class> <!-- RestApiTests.JobsApi_Deleteprograms -->
+      <class name="RestApiTests.JobsApi_Putprogram">
+        <methods>
+          <include name="Put_programs"/>
+        </methods>
+      </class> <!-- RestApiTests.JobsApi_Putprogram -->
+      <class name="RestApiTests.JobsApi_getcreateddata">
+        <methods>
+          <include name="getcreatedprogram"/>
+        </methods>
+      </class> <!-- RestApiTests.JobsApi_getcreateddata -->
+      <class name="RestApiTests.JobsAPi_Postprograms">
+        <methods>
+          <include name="Post_program"/>
+        </methods>
+      </class> <!-- RestApiTests.JobsAPi_Postprograms -->
+    </classes>
+  </test> <!-- Testall(failed) -->
+</suite> <!-- Failed suite [Suite] -->
