@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite1">
+  <test thread-count="5" parallel="classes" name="Testall">
+    <classes>
+      <class name="testCases.LmsApiProject.TC001_LmsgetMethod"/>
+      <class name="testCases.LmsApiProject.Lms_jsonschemavalidation"/>
+      <class name="testCases.LmsApiProject.TC003_LmsPutMethod"/>
+      <class name="testCases.LmsApiProject.TC004_LmsDeleteMethod"/>
+      <class name="testCases.LmsApiProject.TC002_LmsPostmethod"/>
+      <class name="demo.LMSApi_allmethodstest"/>
+    </classes>
+  </test> <!-- Testall -->
+</suite> <!-- Suite1 -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test parallel="classes" name="Testall(failed)">
+    <classes>
+      <class name="demo.LMSApi_allmethodstest">
+        <methods>
+          <include name="Lms_Deleteprograms"/>
+        </methods>
+      </class> <!-- demo.LMSApi_allmethodstest -->
+      <class name="testCases.LmsApiProject.TC002_LmsPostmethod">
+        <methods>
+          <include name="Post_program"/>
+        </methods>
+      </class> <!-- testCases.LmsApiProject.TC002_LmsPostmethod -->
+      <class name="testCases.LmsApiProject.TC003_LmsPutMethod">
+        <methods>
+          <include name="Lms_Putprogram"/>
+        </methods>
+      </class> <!-- testCases.LmsApiProject.TC003_LmsPutMethod -->
+      <class name="testCases.LmsApiProject.TC004_LmsDeleteMethod">
+        <methods>
+          <include name="Lms_Deleteprograms"/>
+        </methods>
+      </class> <!-- testCases.LmsApiProject.TC004_LmsDeleteMethod -->
+    </classes>
+  </test> <!-- Testall(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
