@@ -31,7 +31,7 @@ Response get_response =
 
 	
 	
-		.log().all()
+	//	.log().all()
 		.extract().response();
 
   }

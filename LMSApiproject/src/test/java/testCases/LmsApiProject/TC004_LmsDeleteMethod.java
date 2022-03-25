@@ -27,7 +27,7 @@ public class TC004_LmsDeleteMethod {
  	{
 		 JSONObject data = new JSONObject();
 		 data.put("programId",ProgramId);
-		 System.out.println("Request JSON body input : " + data.toJSONString());
+		 //System.out.println("Request JSON body input : " + data.toJSONString());
 
 			Response delete_response =
 		 
@@ -40,12 +40,12 @@ public class TC004_LmsDeleteMethod {
 		  
 		  	.then()
 		  		.extract().response();
-			Reporter.log(delete_response.asString());
+			//Reporter.log(delete_response.asString());
 			JsonPath jpath = delete_response.jsonPath();
 			
 			ResponseBody allrecords = delete_response.getBody();
 
-			System.out.println(delete_response.body().asPrettyString());
+			//System.out.println(delete_response.body().asPrettyString());
 
 			 Integer pg_Id  = allrecords.jsonPath().get("programId");
 			 System.out.println( " The first record id is " + pg_Id);

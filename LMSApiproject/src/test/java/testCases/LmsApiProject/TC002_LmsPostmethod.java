@@ -38,7 +38,7 @@ public class TC002_LmsPostmethod {
 		 Programdata.put("programDescription",programDescription);
 		 Programdata.put("programName",programName);
 		 
-		 System.out.println("Request JSON body : " + Programdata.toJSONString());
+		 //System.out.println("Request JSON body : " + Programdata.toJSONString());
 		
 		Response POSTresponse =		
 				
@@ -49,10 +49,10 @@ public class TC002_LmsPostmethod {
 			.when()
 				.post(lmsApiUtils_config.Base_URL +lmsApiUtils_config.Base_path)
 			.then()
-			.log().all()
+			//.log().all()
 					.extract().response();
 			
-			Reporter.log(POSTresponse.asString());
+			//Reporter.log(POSTresponse.asString());
 			JsonPath jpath = POSTresponse.jsonPath();// to readable format
 
 			// validating Jsonpath and Json Body at the first record

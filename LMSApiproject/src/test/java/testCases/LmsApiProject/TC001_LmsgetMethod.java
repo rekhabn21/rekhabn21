@@ -27,13 +27,13 @@ public class TC001_LmsgetMethod {
 			.get(lmsApiUtils_config.Base_URL +lmsApiUtils_config.Base_path)
 		.then()		
 		
-			.log().all()
+			//.log().all()
 			.extract().response();
 		
-		Reporter.log(get_response.asPrettyString());		
+		//Reporter.log(get_response.asPrettyString());		
 				
 		JsonPath jpath = get_response.jsonPath();// to readable format
-		System.out.println(get_response.body().asString());
+		//System.out.println(get_response.body().asString());
 		
 		
 	// validating Jsonpath and Json Body at the first record

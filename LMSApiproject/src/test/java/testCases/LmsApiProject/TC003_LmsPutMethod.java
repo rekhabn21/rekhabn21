@@ -31,7 +31,7 @@ public class TC003_LmsPutMethod {
 		data.put("programId", ProgramId);
 
 	
-		System.out.println("Request JSON body input : " + data.toJSONString());
+		//System.out.println("Request JSON body input : " + data.toJSONString());
 
 		Response put_response =
 
@@ -42,14 +42,15 @@ public class TC003_LmsPutMethod {
 				.when()
 					.put(lmsApiUtils_config.Base_URL +lmsApiUtils_config.Base_path )
 				.then()
-					.log().all().extract().response();
+					//.log().all()
+					.extract().response();
 			
-		Reporter.log(put_response.asString());
+		//Reporter.log(put_response.asString());
 		JsonPath jpath = put_response.jsonPath();
 		
 		ResponseBody allrecords1 = put_response.getBody();
 
-		System.out.println(put_response.body().asPrettyString());
+		//System.out.println(put_response.body().asPrettyString());
 		
 		 Integer pg_Id  = allrecords1.jsonPath().get("programId");
 		 System.out.println( " The first record id is " + pg_Id);

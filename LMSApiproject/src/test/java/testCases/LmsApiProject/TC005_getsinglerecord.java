@@ -31,13 +31,13 @@ public class TC005_getsinglerecord {
 			.then()		
 			
 				.statusCode(200)
-				.log().all()
+				//.log().all()
 				.extract().response();
 			
-			Reporter.log(get_response.asPrettyString());		
+			//Reporter.log(get_response.asPrettyString());		
 					
 			JsonPath jpath = get_response.jsonPath();// to readable format
-			System.out.println(get_response.body().asString());
+			//System.out.println(get_response.body().asString());
 			
 			
 		// validating Jsonpath and Json Body at the first record
