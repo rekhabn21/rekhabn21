@@ -4,8 +4,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -27,7 +29,7 @@ public class DriverFactory {
 	public WebDriver init_driver(String browser) {
 		System.out.println("browser value is:"  +browser);
 		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+		((WebDriverManager) getDriver()).setup();
 			tlDriver.set(new ChromeDriver());		
 		}
 		
