@@ -3,11 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="demo.LMSApi_allmethodstest">
+      <class name="testCases.LmsApiProject.TC001_LmsgetMethod">
         <methods>
-          <include name="Lms_Deleteprograms"/>
+          <include name="Get_allprograms"/>
         </methods>
-      </class> <!-- demo.LMSApi_allmethodstest -->
+      </class> <!-- testCases.LmsApiProject.TC001_LmsgetMethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
